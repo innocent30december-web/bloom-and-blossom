@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Bloom&Blossom</title>
+</head>
+
+<body>
+
+    <header class="checkout-header">
+        <a href="index.html" class="logo">Bloom&Blossom</a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Continue Shopping</a>
+            <a href="cart.html">Back to Cart</a>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+
+        <h1>Checkout</h1>
+        <p>Complete your details to place your flower order.</p>
+
+        <div class="checkout-layout">
+
+            <!-- Customer details -->
+            <section class="customer-details">
+                <h2>Delivery Information</h2>
+
+                <form class="checkout-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"
+                            autocomplete="name" aria-describedby="name-error" required>
+
+                        <div class="name-error error-message" id="name-error" aria-live="polite"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+                            autocomplete="tel" aria-describedby="phone-error" required>
+
+                        <div class="phone-error error-message" id="phone-error" aria-live="polite"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+
+                        <textarea id="address" name="address" placeholder="Enter your delivery address" rows="4"
+                            autocomplete="street-address" aria-describedby="address-error" required></textarea>
+
+                        <div class="address-error error-message" id="address-error" aria-live="polite"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instructions">
+                            Delivery Instructions (Optional)
+                        </label>
+
+                        <textarea id="instructions" name="instructions" placeholder="Any special delivery instructions?"
+                            rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="place-order">
+                        Place Order
+                    </button>
+
+                </form>
+            </section>
+
+            <!-- Order summary -->
+            <section class="order-summary">
+                <h2>Your Order</h2>
+
+                <div class="checkout-items">
+                    <!-- JavaScript will display cart items here -->
+                </div>
+
+                <div class="checkout-total">
+                    <span>Grand Total:</span>
+                    <span class="checkout-grand-total">UGX 0</span>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="checkout-footer">
+        <p>&copy; 2026 Bloom&Blossom. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="../SCRIPTS/checkout.js"></script>
+
+</body>
+
+</html>

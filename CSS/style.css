@@ -1,0 +1,17 @@
+.product-rating {
+    margin: 15px 0;
+}
+
+.product-rating .stars {
+    display: flex;
+    gap: 5px;
+}
+
+.product-rating .stars button {
+    border: none;
+    background: none;
+    color: #ccc;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
