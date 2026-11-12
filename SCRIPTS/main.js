@@ -126,3 +126,5 @@ const calculateAverage = (ratingList) => {
 const sampleRatings = [5, 3, 4];
 
 console.log(calculateAverage(sampleRatings)); // 4
+
+document.title = "bloom&blossom"
